@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:d="http://xamarin.com/schemas/2014/forms/design" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d" x:Class="FireForgetClient.MainPage">
+    <StackLayout>
+        <!-- Place new controls here -->
+        <Label Text="Welcome to Task Monitor!" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" />
+
+        <Label Text="{Binding TaskStatus}" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" ></Label>
+
+        <ActivityIndicator IsRunning="true" IsVisible="{Binding IsBusy}"> 
+
+        </ActivityIndicator>
+
+        <Button Text="Fire Forget Task" HorizontalOptions="Center" VerticalOptions="Center" Command="{Binding FireForgetTaskCommand}" />
+        <Button Text="Fire Forget Task With Result" HorizontalOptions="Center" VerticalOptions="Center" Command="{Binding FireForgetTaskWithResultCommand}" />
+        <Button Text="Fire Forget Task With Error" HorizontalOptions="Center" VerticalOptions="Center" Command="{Binding FireForgetTaskWithErrorCommand}" />
+
+    </StackLayout>
+</ContentPage>
