@@ -55,7 +55,7 @@
     <PackageReference Include="Xamarin.Forms" Version="4.2.0.709249" />
     <PackageReference Include="Xamarin.Android.Support.Core.Utils" Version="28.0.0.1" />
     <PackageReference Include="Xamarin.Essentials" Version="1.2.0" />
-    <PackageReference Include="fire_forget">
+    <PackageReference Include="FireForget">
       <Version>1.0.0</Version>
     </PackageReference>
   </ItemGroup>
